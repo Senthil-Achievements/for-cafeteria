@@ -13,7 +13,7 @@ Please change the parent <Route path="${R}"> to <Route path="${R==="/"?"*":`${R}
         calc(var(--x, 0) * 1px)
         calc(var(--y, 0) * 1px),
         hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 0.1)), transparent
-      )`,backgroundColor:"var(--backdrop, transparent)",backgroundSize:"calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)))",backgroundPosition:"50% 50%",backgroundAttachment:"fixed",border:"var(--border-size) solid var(--backup-border)",position:"relative",touchAction:"none"};return u!==void 0&&(M.width=typeof u=="number"?`${u}px`:u),f!==void 0&&(M.height=typeof f=="number"?`${f}px`:f),M};return S.jsxs(S.Fragment,{children:[S.jsx("style",{dangerouslySetInnerHTML:{__html:`
+      )`,backgroundColor:"var(--backdrop, transparent)",backgroundSize:"calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)))",backgroundPosition:"50% 50%",backgroundAttachment:"fixed",border:"var(--border-size) solid var(--backup-border)",position:"relative"};return u!==void 0&&(M.width=typeof u=="number"?`${u}px`:u),f!==void 0&&(M.height=typeof f=="number"?`${f}px`:f),M};return S.jsxs(S.Fragment,{children:[S.jsx("style",{dangerouslySetInnerHTML:{__html:`
     [data-glow]::before,
     [data-glow]::after {
       pointer-events: none;
