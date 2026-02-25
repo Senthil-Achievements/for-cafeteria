@@ -14,7 +14,7 @@ function App() {
       <div className="relative z-10 h-full">
         <AuthProvider>
           <CartProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/for-cafeteria">
               <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route
