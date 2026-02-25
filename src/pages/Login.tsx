@@ -34,11 +34,7 @@ export default function Login() {
     };
 
     return (
-        <div className="dark bg-black relative min-h-screen flex items-center justify-center px-4">
-            <div className="absolute inset-0 z-0">
-                {/* Background rendering is now globally handled by App.tsx wrapper */}
-            </div>
-
+        <div className="relative min-h-screen flex items-center justify-center px-4">
             <GlowCard
                 customSize
                 glowColor="green"
