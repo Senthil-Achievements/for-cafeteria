@@ -21,7 +21,7 @@ export function HoverBorderGradient({
         className?: string;
         duration?: number;
         clockwise?: boolean;
-    } & React.HTMLAttributes<HTMLElement>
+    } & React.HTMLAttributes<HTMLElement> & { disabled?: boolean }
 >) {
     const [hovered, setHovered] = useState<boolean>(false);
     const [direction, setDirection] = useState<Direction>("TOP");
@@ -57,9 +57,7 @@ export function HoverBorderGradient({
     }, [hovered, duration, clockwise]);
     return (
         <Tag
-            onMouseEnter={(event: React.MouseEvent<HTMLDivElement>) => {
-                setHovered(true);
-            }}
+            onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             className={cn(
                 "relative flex rounded-full border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
