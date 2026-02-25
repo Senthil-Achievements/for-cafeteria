@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #80B918;
+  --color-primary-red: #FF4D6D;
+  --color-primary-orange: #FF9F1C;
+}
+
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
