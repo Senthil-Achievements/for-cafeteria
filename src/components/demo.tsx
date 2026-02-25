@@ -1,8 +1,8 @@
 import { BackgroundPaths } from "./ui/background-paths";
 import { GlowCard } from "@/components/ui/spotlight-card";
 
-export function DemoBackgroundPaths() {
-    return <BackgroundPaths title="" />
+export function DemoBackgroundPaths({ className }: { className?: string }) {
+    return <BackgroundPaths title="" className={className} />
 }
 
 export function DemoGlowCard() {

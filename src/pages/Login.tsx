@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Lock } from 'lucide-react';
-import { DemoBackgroundPaths } from '../components/demo';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 export default function Login() {
@@ -37,8 +36,7 @@ export default function Login() {
     return (
         <div className="dark bg-black relative min-h-screen flex items-center justify-center px-4">
             <div className="absolute inset-0 z-0">
-                {/* Passing an empty title removes the text wrapper entirely */}
-                <DemoBackgroundPaths />
+                {/* Background rendering is now globally handled by App.tsx wrapper */}
             </div>
 
             <GlowCard

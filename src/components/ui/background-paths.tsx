@@ -47,15 +47,19 @@ function FloatingPaths({ position }: { position: number }) {
     );
 }
 
+import { cn } from "@/lib/utils";
+
 export function BackgroundPaths({
     title = "",
+    className,
 }: {
     title?: string;
+    className?: string;
 }) {
     const words = title.split(" ").filter(Boolean);
 
     return (
-        <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none z-0 opacity-50 bg-black">
+        <div className={cn("fixed inset-0 w-full h-full overflow-hidden pointer-events-none z-0 opacity-50 bg-black", className)}>
             <FloatingPaths position={1} />
             <FloatingPaths position={-1} />
             {title && (
