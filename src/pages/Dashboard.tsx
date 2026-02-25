@@ -11,15 +11,15 @@ import { ParallaxScrollSecond } from '../components/ui/parallax-scroll';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const galleryImages = [
-    "https://images.unsplash.com/photo-1554080353-a576cf803bda?w=800&q=80",
-    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=800&q=80",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800&q=80",
-    "https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?w=800&q=80",
-    "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&q=80",
-    "https://images.unsplash.com/photo-1439853949127-fa647821eba0?w=800&q=80",
-    "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&q=80",
-    "https://images.unsplash.com/photo-1626779836913-94c6f376a4df?w=800&q=80",
-    "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80",
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", // Food platter
+    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80", // Pizza
+    "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80", // Avocado Toast
+    "https://images.unsplash.com/photo-1493770348161-369560ae357d?w=800&q=80", // Healthy meal bowl
+    "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&q=80", // Plated dish
+    "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80", // Spicy Curry / Indian food
+    "https://images.unsplash.com/photo-1484723091791-0016e254bf35?w=800&q=80", // Noodles / Asian food
+    "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80", // Ribs / Meat
+    "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80", // Pancakes / Breakfast
 ];
 
 export default function Dashboard() {

@@ -4,13 +4,13 @@ import type { ReactNode } from "react"
 import { cn } from "@/lib/utils"
 
 interface GlowingShadowButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: ReactNode
+  children: ReactNode
 }
 
 export function GlowingShadow({ children, className, ...props }: GlowingShadowButtonProps) {
-    return (
-        <>
-            <style>{`
+  return (
+    <>
+      <style>{`
         @property --hue {
           syntax: "<number>";
           inherits: true;
@@ -284,14 +284,14 @@ export function GlowingShadow({ children, className, ...props }: GlowingShadowBu
         }
       `}</style>
 
-            <button className={cn("glow-container", className)} {...props} type={props.type || "button"}>
-                <span className="glow"></span>
-                <div className={cn("glow-content", "w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white")}>
-                    <div className="relative z-10 w-full">
-                        {children}
-                    </div>
-                </div>
-            </button>
-        </>
-    )
+      <button className={cn("glow-container", className)} {...props} type={props.type || "button"}>
+        <span className="glow"></span>
+        <div className={cn("glow-content", "w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white")}>
+          <div className="relative z-10 w-full flex items-center justify-center gap-2">
+            {children}
+          </div>
+        </div>
+      </button>
+    </>
+  )
 }
