@@ -53,7 +53,7 @@ export default function Checkout() {
 
     return (
         <div className="min-h-screen z-10 relative">
-            <Header onCartClick={() => navigate('/')} />
+            <Header onCartClick={() => navigate('/')} showBack={true} onBackClick={() => navigate(-1)} />
 
             <main className="max-w-3xl mx-auto px-4 py-8 relative">
                 <h1 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">

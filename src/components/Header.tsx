@@ -1,13 +1,15 @@
-import { ShoppingBag, LogOut, User as UserIcon } from 'lucide-react';
+import { ShoppingBag, LogOut, User as UserIcon, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { GlowCard } from './ui/spotlight-card';
 
 interface HeaderProps {
     onCartClick: () => void;
+    showBack?: boolean;
+    onBackClick?: () => void;
 }
 
-export function Header({ onCartClick }: HeaderProps) {
+export function Header({ onCartClick, showBack, onBackClick }: HeaderProps) {
     const { user, logout } = useAuth();
     const { totalItems } = useCart();
 
@@ -15,7 +17,16 @@ export function Header({ onCartClick }: HeaderProps) {
         <header className="sticky top-0 z-40 p-4">
             <GlowCard customSize glowColor="green" className="max-w-5xl mx-auto bg-neutral-900/80 border border-white/10 backdrop-blur-xl rounded-2xl shadow-xl p-0">
                 <div className="h-16 px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full relative z-10">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 xl:gap-4">
+                        {showBack && (
+                            <button
+                                onClick={onBackClick}
+                                className="p-2 sm:mr-2 text-neutral-400 hover:text-white hover:bg-white/10 rounded-full transition-colors flex items-center justify-center"
+                                title="Go Back"
+                            >
+                                <ArrowLeft size={20} />
+                            </button>
+                        )}
                         <div className="w-8 h-8 bg-[#80B918] rounded-lg flex items-center justify-center text-white font-bold shadow-lg shadow-[#80B918]/20">
                             C
                         </div>
