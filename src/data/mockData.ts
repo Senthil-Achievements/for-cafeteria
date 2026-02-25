@@ -55,7 +55,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#FF9F1C',
         availability: 'Available',
         imagePlaceholder: '🥟',
-        image: 'https://images.unsplash.com/photo-1589301760014-d929f3989fac?w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?w=800&q=80',
         addOns: [],
     },
     {
