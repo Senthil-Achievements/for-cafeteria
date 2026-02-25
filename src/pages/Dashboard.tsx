@@ -11,15 +11,15 @@ import { ParallaxScrollSecond } from '../components/ui/parallax-scroll';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const galleryImages = [
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", // Food platter
+    "https://images.unsplash.com/photo-1546069901-ba959d31c60c?w=800&q=80", // Bowl of food
+    "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80", // Steak
     "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80", // Pizza
-    "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80", // Avocado Toast
     "https://images.unsplash.com/photo-1493770348161-369560ae357d?w=800&q=80", // Healthy meal bowl
-    "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&q=80", // Plated dish
+    "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80", // Pasta
     "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80", // Spicy Curry / Indian food
     "https://images.unsplash.com/photo-1484723091791-0016e254bf35?w=800&q=80", // Noodles / Asian food
     "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80", // Ribs / Meat
-    "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80", // Pancakes / Breakfast
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", // Food platter
 ];
 
 export default function Dashboard() {
@@ -42,7 +42,7 @@ export default function Dashboard() {
     };
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen relative z-10">
             <Header onCartClick={() => setIsCartOpen(true)} />
 
             <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">

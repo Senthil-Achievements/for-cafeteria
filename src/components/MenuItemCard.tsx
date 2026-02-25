@@ -2,7 +2,7 @@ import { Plus } from 'lucide-react';
 import type { MenuItem } from '../types';
 import { motion } from 'framer-motion';
 import { GlowCard } from './ui/spotlight-card';
-import { GlowingShadow } from './ui/glowing-shadow';
+import { HoverBorderGradient } from './ui/hover-border-gradient';
 
 interface Props {
     item: MenuItem;
@@ -53,14 +53,16 @@ export function MenuItemCard({ item, onAdd }: Props) {
 
                     <p className="text-sm text-neutral-400 mb-6 flex-grow line-clamp-2">{item.description}</p>
 
-                    <GlowingShadow
+                    <HoverBorderGradient
+                        as="button"
                         onClick={() => onAdd(item)}
                         disabled={item.availability === 'Sold Out'}
-                        className="w-full py-1"
+                        containerClassName="w-full mt-2"
+                        className="w-full flex items-center justify-center gap-2 py-2.5 bg-neutral-900 focus:outline-none"
                     >
                         <Plus size={18} className="text-[#80B918]" />
-                        <span className="font-bold tracking-wide text-white/90 group-hover:text-white transition-colors">{item.addOns.length > 0 ? 'Customize' : 'Add to Cart'}</span>
-                    </GlowingShadow>
+                        <span className="font-bold tracking-wide text-white/90 transition-colors uppercase text-sm">{item.addOns.length > 0 ? 'Customize' : 'Add to Cart'}</span>
+                    </HoverBorderGradient>
                 </div>
             </motion.div>
         </GlowCard>
