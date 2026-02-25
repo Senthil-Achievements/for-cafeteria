@@ -11,15 +11,15 @@ import { ParallaxScrollSecond } from '../components/ui/parallax-scroll';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const galleryImages = [
-    "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&q=80", // Meat
-    "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80", // Steak
-    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80", // Pizza
-    "https://images.unsplash.com/photo-1493770348161-369560ae357d?w=800&q=80", // Healthy meal bowl
-    "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80", // Pasta
-    "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80", // Spicy Curry / Indian food
-    "https://images.unsplash.com/photo-1481070555726-e2fe83477d15?w=800&q=80", // Slider
-    "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80", // Ribs / Meat
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", // Food platter
+    "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800", // Plated food
+    "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=800", // Pancakes
+    "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800", // Burger
+    "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=800", // Burger and fries
+    "https://images.pexels.com/photos/315671/pexels-photo-315671.jpeg?auto=compress&cs=tinysrgb&w=800", // Pizza
+    "https://images.pexels.com/photos/1128626/pexels-photo-1128626.jpeg?auto=compress&cs=tinysrgb&w=800", // Dessert
+    "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=800", // Healthy bowl
+    "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=800", // Fries
+    "https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=800", // Salad bowl
 ];
 
 export default function Dashboard() {
