@@ -5,6 +5,7 @@ import path from "path"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/frontend-only/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
