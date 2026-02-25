@@ -14,7 +14,7 @@ function App() {
       <div className="relative z-10 h-full">
         <AuthProvider>
           <CartProvider>
-            <BrowserRouter basename="/frontend-only">
+            <BrowserRouter>
               <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route
