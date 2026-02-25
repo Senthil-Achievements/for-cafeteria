@@ -6,8 +6,21 @@ import { CartDrawer } from '../components/CartDrawer';
 import { todayMenu, categories } from '../data/mockData';
 import type { MenuItem, AddOn } from '../types';
 import { useCart } from '../context/CartContext';
+import { ParallaxScrollSecond } from '../components/ui/parallax-scroll';
 
 import { GlowCard } from '../components/ui/spotlight-card';
+
+const galleryImages = [
+    "https://images.unsplash.com/photo-1554080353-a576cf803bda?w=800&q=80",
+    "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=800&q=80",
+    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800&q=80",
+    "https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?w=800&q=80",
+    "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&q=80",
+    "https://images.unsplash.com/photo-1439853949127-fa647821eba0?w=800&q=80",
+    "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&q=80",
+    "https://images.unsplash.com/photo-1626779836913-94c6f376a4df?w=800&q=80",
+    "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80",
+];
 
 export default function Dashboard() {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -57,6 +70,14 @@ export default function Dashboard() {
                         ))}
                     </div>
                 </GlowCard>
+
+                <section className="pt-8">
+                    <div className="mb-4">
+                        <h2 className="text-3xl font-extrabold text-white tracking-tight">Culinary Inspiration</h2>
+                        <p className="text-neutral-400 mt-2">A glimpse into our vibrant kitchens and dining spaces.</p>
+                    </div>
+                    <ParallaxScrollSecond images={galleryImages} />
+                </section>
             </main>
 
             <AddOnsModal

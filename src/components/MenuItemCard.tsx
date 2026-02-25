@@ -2,7 +2,7 @@ import { Plus } from 'lucide-react';
 import type { MenuItem } from '../types';
 import { motion } from 'framer-motion';
 import { GlowCard } from './ui/spotlight-card';
-import { RainbowBorderButton } from './ui/rainbow-borders-button';
+import { GlowingShadow } from './ui/glowing-shadow';
 
 interface Props {
     item: MenuItem;
@@ -53,14 +53,14 @@ export function MenuItemCard({ item, onAdd }: Props) {
 
                     <p className="text-sm text-neutral-400 mb-6 flex-grow line-clamp-2">{item.description}</p>
 
-                    <RainbowBorderButton
+                    <GlowingShadow
                         onClick={() => onAdd(item)}
                         disabled={item.availability === 'Sold Out'}
-                        className="w-full py-3"
+                        className="w-full py-1"
                     >
                         <Plus size={18} className="text-[#80B918]" />
-                        <span className="text-white/90 group-hover:text-white transition-colors">{item.addOns.length > 0 ? 'Customize & Add' : 'Add to Cart'}</span>
-                    </RainbowBorderButton>
+                        <span className="font-bold tracking-wide text-white/90 group-hover:text-white transition-colors">{item.addOns.length > 0 ? 'Customize' : 'Add to Cart'}</span>
+                    </GlowingShadow>
                 </div>
             </motion.div>
         </GlowCard>
