@@ -23,6 +23,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#80B918',
         availability: 'Available',
         imagePlaceholder: '🍛',
+        image: 'https://images.unsplash.com/photo-1626779836913-94c6f376a4df?w=800&q=80',
         addOns: [
             { id: 'a1', name: 'Extra Papad', price: 10 },
             { id: 'a2', name: 'Curd Cup', price: 15 },
@@ -38,6 +39,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#FF4D6D',
         availability: 'Few Left',
         imagePlaceholder: '🍗',
+        image: 'https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?w=800&q=80',
         addOns: [
             { id: 'a3', name: 'Boiled Egg', price: 15 },
             { id: 'a4', name: 'Extra Raita', price: 10 },
@@ -53,6 +55,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#FF9F1C',
         availability: 'Available',
         imagePlaceholder: '🥟',
+        image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80',
         addOns: [],
     },
     {
@@ -65,6 +68,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#80B918',
         availability: 'Available',
         imagePlaceholder: '☕',
+        image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&q=80',
         addOns: [],
     },
 ];

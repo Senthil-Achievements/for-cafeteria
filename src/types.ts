@@ -20,6 +20,7 @@ export type MenuItem = {
     uiColor: string;
     availability: 'Available' | 'Few Left' | 'Sold Out';
     imagePlaceholder: string;
+    image?: string;
     addOns: AddOn[];
 };
 

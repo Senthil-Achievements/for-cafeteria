@@ -2,6 +2,7 @@ import { Plus } from 'lucide-react';
 import type { MenuItem } from '../types';
 import { motion } from 'framer-motion';
 import { GlowCard } from './ui/spotlight-card';
+import { RainbowBorderButton } from './ui/rainbow-borders-button';
 
 interface Props {
     item: MenuItem;
@@ -17,17 +18,28 @@ export function MenuItemCard({ item, onAdd }: Props) {
                 className="flex flex-col h-full rounded-2xl"
             >
                 <div
-                    className="h-32 flex items-center justify-center text-6xl relative backdrop-blur-md rounded-t-2xl border-b border-white/5"
+                    className="h-40 relative backdrop-blur-md rounded-t-2xl border-b border-white/5 overflow-hidden"
                     style={{ backgroundColor: `${item.uiColor}20` }}
                 >
-                    <span className="group-hover:scale-110 transition-transform duration-300 drop-shadow-2xl">{item.imagePlaceholder}</span>
+                    {item.image ? (
+                        <img
+                            src={item.image}
+                            alt={item.name}
+                            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                        />
+                    ) : (
+                        <div className="flex w-full h-full items-center justify-center text-6xl">
+                            <span className="group-hover:scale-110 transition-transform duration-300 drop-shadow-2xl">{item.imagePlaceholder}</span>
+                        </div>
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent opacity-80"></div>
 
                     <div className="absolute top-3 left-3 flex gap-2">
-                        <span className={`px-2 py-1 text-[10px] font-bold uppercase rounded-full tracking-wider ${item.dietaryPreference === 'Veg' ? 'bg-[#80B918]/20 text-[#80B918] border border-[#80B918]/30' : 'bg-red-500/20 text-red-500 border border-red-500/30'
+                        <span className={`px-2 py-1 text-[10px] font-bold uppercase rounded-full tracking-wider shadow-sm backdrop-blur-md ${item.dietaryPreference === 'Veg' ? 'bg-[#80B918]/20 text-[#80B918] border border-[#80B918]/30' : 'bg-red-500/20 text-red-500 border border-red-500/30'
                             }`}>
                             {item.dietaryPreference}
                         </span>
-                        <span className="px-2 py-1 text-[10px] font-bold uppercase rounded-full tracking-wider bg-neutral-900/80 text-neutral-300 backdrop-blur-sm shadow-sm border border-white/10">
+                        <span className="px-2 py-1 text-[10px] font-bold uppercase rounded-full tracking-wider bg-black/60 text-neutral-300 backdrop-blur-md shadow-sm border border-white/10">
                             {item.availability}
                         </span>
                     </div>
@@ -39,20 +51,16 @@ export function MenuItemCard({ item, onAdd }: Props) {
                         <p className="font-bold text-[#80B918] whitespace-nowrap">₹{item.price}</p>
                     </div>
 
-                    <p className="text-sm text-neutral-400 mb-4 flex-grow line-clamp-2">{item.description}</p>
+                    <p className="text-sm text-neutral-400 mb-6 flex-grow line-clamp-2">{item.description}</p>
 
-                    <button
+                    <RainbowBorderButton
                         onClick={() => onAdd(item)}
                         disabled={item.availability === 'Sold Out'}
-                        className="w-full py-2.5 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-all 
-            bg-neutral-800/80 text-white hover:bg-neutral-700 border border-white/10
-            disabled:opacity-50 disabled:cursor-not-allowed group-hover:border-[#80B918] group-hover:text-[#80B918]"
+                        className="w-full py-3"
                     >
-                        <span className="relative z-10 flex items-center gap-2 cursor-pointer">
-                            <Plus size={18} />
-                            <span>{item.addOns.length > 0 ? 'Customize & Add' : 'Add to Cart'}</span>
-                        </span>
-                    </button>
+                        <Plus size={18} className="text-[#80B918]" />
+                        <span className="text-white/90 group-hover:text-white transition-colors">{item.addOns.length > 0 ? 'Customize & Add' : 'Add to Cart'}</span>
+                    </RainbowBorderButton>
                 </div>
             </motion.div>
         </GlowCard>
