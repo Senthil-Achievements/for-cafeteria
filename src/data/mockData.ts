@@ -23,7 +23,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#80B918',
         availability: 'Available',
         imagePlaceholder: '🍛',
-        image: 'https://images.pexels.com/photos/376442/pexels-photo-376442.jpeg?auto=compress&cs=tinysrgb&w=800', // Pexels replacement
+        image: 'https://picsum.photos/id/292/800/800', // Kitchen/Meals
         addOns: [
             { id: 'a1', name: 'Extra Papad', price: 10 },
             { id: 'a2', name: 'Curd Cup', price: 15 },
@@ -39,7 +39,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#FF4D6D',
         availability: 'Few Left',
         imagePlaceholder: '🍗',
-        image: 'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=800', // Pexels replacement
+        image: 'https://picsum.photos/id/1080/800/800', // Strawberries/Food
         addOns: [
             { id: 'a3', name: 'Boiled Egg', price: 15 },
             { id: 'a4', name: 'Extra Raita', price: 10 },
@@ -55,7 +55,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#FF9F1C',
         availability: 'Available',
         imagePlaceholder: '🥟',
-        image: 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800', // Pexels replacement
+        image: 'https://picsum.photos/id/493/800/800', // Breakfast/Pancakes
         addOns: [],
     },
     {
@@ -68,7 +68,7 @@ export const todayMenu: MenuItem[] = [
         uiColor: '#80B918',
         availability: 'Available',
         imagePlaceholder: '☕',
-        image: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800', // Pexels replacement
+        image: 'https://picsum.photos/id/425/800/800', // Coffee
         addOns: [],
     },
 ];

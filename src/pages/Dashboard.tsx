@@ -11,15 +11,15 @@ import { ParallaxScrollSecond } from '../components/ui/parallax-scroll';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const galleryImages = [
-    "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800", // Plated food
-    "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=800", // Pancakes
-    "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800", // Burger
-    "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=800", // Burger and fries
-    "https://images.pexels.com/photos/315671/pexels-photo-315671.jpeg?auto=compress&cs=tinysrgb&w=800", // Pizza
-    "https://images.pexels.com/photos/1128626/pexels-photo-1128626.jpeg?auto=compress&cs=tinysrgb&w=800", // Dessert
-    "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=800", // Healthy bowl
-    "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=800", // Fries
-    "https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=800", // Salad bowl
+    "https://picsum.photos/id/292/800/800", // Kitchen/Food
+    "https://picsum.photos/id/1080/800/800", // Strawberries
+    "https://picsum.photos/id/102/800/800", // Raspberries
+    "https://picsum.photos/id/429/800/800", // Fruit
+    "https://picsum.photos/id/835/800/800", // Berries
+    "https://picsum.photos/id/493/800/800", // Breakfast/Pancakes
+    "https://picsum.photos/id/425/800/800", // Coffee
+    "https://picsum.photos/id/1060/800/800", // Coffee/Food
+    "https://picsum.photos/id/113/800/800", // Tea setting
 ];
 
 export default function Dashboard() {
