@@ -2,6 +2,10 @@
 
 A responsive, visually stunning web application for browsing and ordering from a corporate cafeteria menu. Features a highly stylized "Black Neon" dark theme with glowing interactive elements and animated background paths.
 
+## Live Demo
+
+- GitHub Pages: [https://senthil-achievements.github.io/for-cafeteria/](https://senthil-achievements.github.io/for-cafeteria/)
+
 ## Key Features
 
 - **Dynamic Dark Theme**: Premium black backdrop with neon accents.
